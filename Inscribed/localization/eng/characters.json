@@ -1,3 +1,16 @@
 {
-  
+  "INSCRIBED-INSCRIBED.aromaPrinciple": "Lore",
+  "INSCRIBED-INSCRIBED.banter.alive.endTurnPing": "Co-op hurry up end turn ping message",
+  "INSCRIBED-INSCRIBED.banter.dead.endTurnPing": "...",
+  "INSCRIBED-INSCRIBED.cardsModifierDescription": "__ cards will now appear in rewards and shops.",
+  "INSCRIBED-INSCRIBED.cardsModifierTitle": "__ Cards",
+  "INSCRIBED-INSCRIBED.description": "Character Selection\nScreen Description",
+  "INSCRIBED-INSCRIBED.eventDeathPrevention": "Co-op survival line",
+  "INSCRIBED-INSCRIBED.goldMonologue": "Line spoken when obtaining a large amount of gold",
+  "INSCRIBED-INSCRIBED.possessiveAdjective": "his/her/its",
+  "INSCRIBED-INSCRIBED.pronounObject": "him/her/it",
+  "INSCRIBED-INSCRIBED.pronounPossessive": "his/hers/its",
+  "INSCRIBED-INSCRIBED.pronounSubject": "he/she/it",
+  "INSCRIBED-INSCRIBED.title": "The Inscribed",
+  "INSCRIBED-INSCRIBED.titleObject": "The Inscribed"
 }
