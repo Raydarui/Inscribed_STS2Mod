@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://ceq2wnr8qs8v6"]
+
+[node name="Inscribed" type="Node2D"]
+
+[node name="Bounds" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CenterPos" type="Marker2D" parent="."]
+
+[node name="IntentPos" type="Marker2D" parent="."]
+
+[node name="Visuals" type="Sprite2D" parent="."]
