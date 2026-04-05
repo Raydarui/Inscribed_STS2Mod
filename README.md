@@ -1,5 +1,13 @@
 # The Inscribed
-## Character mod for STS2
+### Character mod for STS2
+## **Overview**
+> *A tricky character who enhances bolts by combining various Runes, allowing players to adapt their tactics to any situation.*
+
+---
+
+## **Unique Mechanics**
+### **Bolt-Customization**
+Load various **Elemental Runes** into your bolts before firing to trigger specialized effects. Mastering the synergy between different runes is the key to victory.
 
 # Install
 Download the latest zip file from releases and unzip it in your STS2 mods folder (located in C:\Program Files (x86)\Steam\steamapps\common\Slay the Spire 2\mods by default).
