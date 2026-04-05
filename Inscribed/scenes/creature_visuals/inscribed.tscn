@@ -1,15 +1,24 @@
-[gd_scene format=3 uid="uid://ceq2wnr8qs8v6"]
+[gd_scene load_steps=2 format=3 uid="uid://ceq2wnr8qs8v6"]
+
+[ext_resource type="Texture2D" uid="uid://b3858asvwl0dl" path="res://Inscribed/images/crossbow-ruby-raider.png" id="1_6rc2f"]
 
 [node name="Inscribed" type="Node2D"]
 
 [node name="Bounds" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -120.0
+offset_top = -253.0
+offset_right = 99.0
+offset_bottom = -3.0
 
 [node name="CenterPos" type="Marker2D" parent="."]
+position = Vector2(0, -122.83)
 
 [node name="IntentPos" type="Marker2D" parent="."]
+position = Vector2(0, -299.51)
 
 [node name="Visuals" type="Sprite2D" parent="."]
+position = Vector2(0, -129.19)
+scale = Vector2(-0.5, 0.505)
+texture = ExtResource("1_6rc2f")

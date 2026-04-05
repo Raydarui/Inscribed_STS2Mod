@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://d2g1ix5403w5g"
+path="res://.godot/imported/crossbow_ruby_raider.atlas-ca1c08d2bbb0fc725eb93f4195ca0dfd.spatlas"
+
+[deps]
+
+source_file="res://Inscribed/animations/crossbow_ruby_raider.atlas"
+dest_files=["res://.godot/imported/crossbow_ruby_raider.atlas-ca1c08d2bbb0fc725eb93f4195ca0dfd.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"
