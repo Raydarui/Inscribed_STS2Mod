@@ -2,15 +2,21 @@
 using Godot;
 using MegaCrit.Sts2.Core.Assets;
 using MegaCrit.Sts2.Core.Bindings.MegaSpine;
+using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Entities.Creatures;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Helpers;
+using MegaCrit.Sts2.Core.Localization;
+using MegaCrit.Sts2.Core.Models;
 
 namespace Inscribed.InscribedCode.Runes;
 
 public class FireRune : CustomOrbModel
 {
-    public override decimal PassiveVal => 0;
+    public override decimal PassiveVal => 5;
     public override decimal EvokeVal => 0;
-    public override Color DarkenedColor => new("ffffff");
+    
+    public override Color DarkenedColor => new("ff0000");
     
     public override Node2D? CreateCustomSprite()
     {
@@ -26,4 +32,5 @@ public class FireRune : CustomOrbModel
         container.AddChild(lightning);
         return container;
     }
+    
 }
