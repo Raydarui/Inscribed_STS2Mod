@@ -2,5 +2,19 @@
   "INSCRIBED-STRIKE_INSCRIBED.description": "Deal {Damage:diff()} damage.",
   "INSCRIBED-STRIKE_INSCRIBED.title": "Strike",
   "INSCRIBED-DEFEND_INSCRIBED.description": "Gain {Block:diff()} Block.",
-  "INSCRIBED-DEFEND_INSCRIBED.title": "Defend"
+  "INSCRIBED-DEFEND_INSCRIBED.title": "Defend",
+  "INSCRIBED-TEST.description": "",
+  "INSCRIBED-TEST.title": "Test",
+  "INSCRIBED-FIRE_RUNE_CARD.description": "Gain a [red]Fire[/red] rune.",
+  "INSCRIBED-FIRE_RUNE_CARD.title": "Fire Rune",
+  "INSCRIBED-EARTH_RUNE_CARD.description": "Gain a [brown]Earth[/brown] rune.",
+  "INSCRIBED-EARTH_RUNE_CARD.title": "Earth Rune",
+  "INSCRIBED-DARK_RUNE_CARD.description": "Gain a [black]Dark[/dark] rune.",
+  "INSCRIBED-DARK_RUNE_CARD.title": "Dark Rune",
+  "INSCRIBED-ICE_RUNE_CARD.description": "Gain an [blue]Ice[/blue] rune.",
+  "INSCRIBED-ICE_RUNE_CARD.title": "Ice Rune",
+  "INSCRIBED-LIGHTNING_RUNE_CARD.description": "Gain a [gold]Lightning[/gold] rune.",
+  "INSCRIBED-LIGHTNING_RUNE_CARD.title": "Lightning Rune",
+  "INSCRIBED-LIGHT_RUNE_CARD.description": "Gain a [white]Light[/white] rune.",
+  "INSCRIBED-LIGHT_RUNE_CARD.title": "Light Rune"
 }

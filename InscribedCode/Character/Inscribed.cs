@@ -3,10 +3,13 @@ using Inscribed.InscribedCode.Extensions;
 using Godot;
 using Inscribed.InscribedCode.Cards;
 using Inscribed.InscribedCode.Cards.Basic;
+using Inscribed.InscribedCode.Runes;
 using MegaCrit.Sts2.Core.Entities.Characters;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.Relics;
+using Inscribed.InscribedCode.Cards.Common;
+
 
 namespace Inscribed.InscribedCode.Character;
 
@@ -23,7 +26,7 @@ public class Inscribed : PlaceholderCharacterModel
 
     public override IEnumerable<CardModel> StartingDeck =>
     [
-        ModelDb.Card<StrikeInscribed>(),
+        /*ModelDb.Card<StrikeInscribed>(),
         ModelDb.Card<StrikeInscribed>(),
         ModelDb.Card<StrikeInscribed>(),
         ModelDb.Card<StrikeInscribed>(),
@@ -32,7 +35,13 @@ public class Inscribed : PlaceholderCharacterModel
         ModelDb.Card<DefendInscribed>(),
         ModelDb.Card<DefendInscribed>(),
         ModelDb.Card<DefendInscribed>(),
-        ModelDb.Card<DefendInscribed>()
+        ModelDb.Card<DefendInscribed>(),*/
+        ModelDb.Card<FireRuneCard>(),
+        ModelDb.Card<DarkRuneCard>(),
+        ModelDb.Card<IceRuneCard>(),
+        ModelDb.Card<LightningRuneCard>(),
+        ModelDb.Card<LightRuneCard>(),
+        ModelDb.Card<EarthRuneCard>()
     ];
 
     public override IReadOnlyList<RelicModel> StartingRelics =>
@@ -41,7 +50,7 @@ public class Inscribed : PlaceholderCharacterModel
     ];
     
     public override int BaseOrbSlotCount => 3;
-
+    
     public override CardPoolModel CardPool => ModelDb.CardPool<InscribedCardPool>();
     public override RelicPoolModel RelicPool => ModelDb.RelicPool<InscribedRelicPool>();
     public override PotionPoolModel PotionPool => ModelDb.PotionPool<InscribedPotionPool>();
