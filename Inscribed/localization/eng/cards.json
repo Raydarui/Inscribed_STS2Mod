@@ -1,3 +1,6 @@
 {
-  
+  "INSCRIBED-STRIKE_INSCRIBED.description": "Deal {Damage:diff()} damage.",
+  "INSCRIBED-STRIKE_INSCRIBED.title": "Strike",
+  "INSCRIBED-DEFEND_INSCRIBED.description": "Gain {Block:diff()} Block.",
+  "INSCRIBED-DEFEND_INSCRIBED.title": "Defend"
 }

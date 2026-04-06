@@ -1,6 +1,8 @@
 ﻿using BaseLib.Abstracts;
 using Inscribed.InscribedCode.Extensions;
 using Godot;
+using Inscribed.InscribedCode.Cards;
+using Inscribed.InscribedCode.Cards.Basic;
 using MegaCrit.Sts2.Core.Entities.Characters;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
@@ -17,25 +19,28 @@ public class Inscribed : PlaceholderCharacterModel
     public override Color NameColor => Color;
     public override CharacterGender Gender => CharacterGender.Neutral;
     public override int StartingHp => 70;
+    public override int StartingGold => 99;
 
     public override IEnumerable<CardModel> StartingDeck =>
     [
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<StrikeIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<DefendIronclad>(),
-        ModelDb.Card<DefendIronclad>()
+        ModelDb.Card<StrikeInscribed>(),
+        ModelDb.Card<StrikeInscribed>(),
+        ModelDb.Card<StrikeInscribed>(),
+        ModelDb.Card<StrikeInscribed>(),
+        ModelDb.Card<StrikeInscribed>(),
+        ModelDb.Card<DefendInscribed>(),
+        ModelDb.Card<DefendInscribed>(),
+        ModelDb.Card<DefendInscribed>(),
+        ModelDb.Card<DefendInscribed>(),
+        ModelDb.Card<DefendInscribed>()
     ];
 
     public override IReadOnlyList<RelicModel> StartingRelics =>
     [
         ModelDb.Relic<BurningBlood>()
     ];
+    
+    public override int BaseOrbSlotCount => 3;
 
     public override CardPoolModel CardPool => ModelDb.CardPool<InscribedCardPool>();
     public override RelicPoolModel RelicPool => ModelDb.RelicPool<InscribedRelicPool>();
@@ -49,5 +54,5 @@ public class Inscribed : PlaceholderCharacterModel
     public override string CustomCharacterSelectIconPath => "char_select_char_name.png".CharacterUiPath();
     public override string CustomCharacterSelectLockedIconPath => "char_select_char_name_locked.png".CharacterUiPath();
     public override string CustomMapMarkerPath => "map_marker_char_name.png".CharacterUiPath();
-    public override string CustomVisualPath => "res://Inscribed/scenes/creature_visuals/inscribed.tscn";
+    public override string CustomVisualPath => "res://Inscribed/scenes/inscribed.tscn";
 }
