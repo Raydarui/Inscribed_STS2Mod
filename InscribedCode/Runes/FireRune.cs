@@ -16,7 +16,7 @@ public class FireRune : CustomOrbModel
     public override decimal PassiveVal => 5;
     public override decimal EvokeVal => 0;
     
-    public override Color DarkenedColor => new("ff0000");
+    public override Color DarkenedColor => new Color(Colors.DarkRed);
     
     public override Node2D? CreateCustomSprite()
     {

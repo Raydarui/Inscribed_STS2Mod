@@ -10,7 +10,7 @@ public class LightRune : CustomOrbModel
 {
     public override decimal PassiveVal => 0;
     public override decimal EvokeVal => 0;
-    public override Color DarkenedColor => new("ffffff");
+    public override Color DarkenedColor => new Color(Colors.LightGray);
     
     public override Node2D? CreateCustomSprite()
     {

@@ -37,12 +37,12 @@ public class Inscribed : PlaceholderCharacterModel
         ModelDb.Card<DefendInscribed>(),
         ModelDb.Card<DefendInscribed>(),*/
         ModelDb.Card<FireRuneCard>(),
-        ModelDb.Card<InscribedStrike>()
-        /*ModelDb.Card<DarkRuneCard>(),
+        ModelDb.Card<InscribedStrike>(),
+        ModelDb.Card<DarkRuneCard>(),
         ModelDb.Card<IceRuneCard>(),
         ModelDb.Card<LightningRuneCard>(),
         ModelDb.Card<LightRuneCard>(),
-        ModelDb.Card<EarthRuneCard>()*/
+        ModelDb.Card<EarthRuneCard>()
     ];
 
     public override IReadOnlyList<RelicModel> StartingRelics =>

@@ -3,6 +3,21 @@
   "INSCRIBED-INSCRIBED_ORB.description": "this is the desc",
   "INSCRIBED-INSCRIBED_ORB.smartDescription": "This is smartDesc",
   "INSCRIBED-FIRE_RUNE.title": "Fire Rune",
-  "INSCRIBED-FIRE_RUNE.description": "Next attack deals more Damage.",
-  "INSCRIBED-FIRE_RUNE.smartDescription": "Next attack deals +5 more Damage."
+  "INSCRIBED-FIRE_RUNE.description": "Next [gold]Inscribed[/gold] attack deals more Damage.",
+  "INSCRIBED-FIRE_RUNE.smartDescription": "Next [gold]Inscribed[/gold] attack deals +5 more Damage.",
+  "INSCRIBED-ICE_RUNE.title": "Ice Rune",
+  "INSCRIBED-ICE_RUNE.description": "Next [gold]Inscribed[/gold] attack applies Weak.",
+  "INSCRIBED-ICE_RUNE.smartDescription": "Next [gold]Inscribed[/gold] attack applies +1 Weak.",
+  "INSCRIBED-LIGHTNING_RUNE.title": "Lightning Rune",
+  "INSCRIBED-LIGHTNING_RUNE.description": "Next [gold]Inscribed[/gold] attack hits twice.",
+  "INSCRIBED-LIGHTNING_RUNE.smartDescription": "Next [gold]Inscribed[/gold] attack hits one more time.",
+  "INSCRIBED-EARTH_RUNE.title": "Earth Rune",
+  "INSCRIBED-EARTH_RUNE.description": "Next [gold]Inscribed[/gold] attack grants you Block.",
+  "INSCRIBED-EARTH_RUNE.smartDescription": "Next [gold]Inscribed[/gold] attack grants you +5 Block.",
+  "INSCRIBED-LIGHT_RUNE.title": "Light Rune",
+  "INSCRIBED-LIGHT_RUNE.description": "Next [gold]Inscribed[/gold] attack, Draw 1 card and Gain 1 energy.",
+  "INSCRIBED-LIGHT_RUNE.smartDescription": "Next [gold]Inscribed[/gold] attack Draw 1 card and Gain 1 energy.",
+  "INSCRIBED-DARK_RUNE.title": "Dark Rune",
+  "INSCRIBED-DARK_RUNE.description": "Next [gold]Inscribed[/gold] attack, target everyone.",
+  "INSCRIBED-DARK_RUNE.smartDescription": "Next [gold]Inscribed[/gold] attack, target everyone."
 }

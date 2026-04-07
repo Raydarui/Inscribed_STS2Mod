@@ -9,6 +9,7 @@ public class InscribedKeywords
 {
     [CustomEnum, KeywordProperties(AutoKeywordPosition.Before)]
     public static CardKeyword Inscription;
+    
 
 
     public static bool IsInscription(CardModel card)
