@@ -5,7 +5,7 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace Inscribed.InscribedCode.Cards.Common;
 
-public class LightningRuneCard() : InscribedCard(1,
+public class ThunderRuneCard() : InscribedCard(1,
     CardType.Skill, CardRarity.Common,
     TargetType.Self)
 {
@@ -15,8 +15,8 @@ public class LightningRuneCard() : InscribedCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        LightningRuneCard card = this;
-        await OrbCmd.Channel<Runes.LightningRune>(choiceContext, card.Owner);
+        ThunderRuneCard card = this;
+        await OrbCmd.Channel<Runes.ThunderRune>(choiceContext, card.Owner);
     }
 
     protected override void OnUpgrade()

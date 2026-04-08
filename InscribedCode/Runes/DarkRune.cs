@@ -15,15 +15,15 @@ public class DarkRune : CustomOrbModel
     public override Node2D? CreateCustomSprite()
     {
         var container = new Node2D();
-        string lightningPath = SceneHelper.GetScenePath("orbs/orb_visuals/lightning_orb");
-        Node2D lightning = PreloadManager.Cache.GetScene(lightningPath)
+        string darkPath = SceneHelper.GetScenePath("orbs/orb_visuals/dark_orb");
+        Node2D dark = PreloadManager.Cache.GetScene(darkPath)
             .Instantiate<Node2D>(PackedScene.GenEditState.Disabled);
-        new MegaSprite(lightning.GetNode("SpineSkeleton"))
+        new MegaSprite(dark.GetNode("SpineSkeleton"))
             .GetAnimationState().SetAnimation("idle_loop");
         // change the color and size
-        lightning.Modulate = new Color(0.0f, 0.0f, 0.0f, 1.0f);
-        lightning.Scale = new Vector2(1.1f, 1.1f);
-        container.AddChild(lightning);
+        // dark.Modulate = new Color(0.0f, 0.0f, 0.0f, 1.0f);
+        dark.Scale = new Vector2(1.1f, 1.1f);
+        container.AddChild(dark);
         return container;
     }
 }

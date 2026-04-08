@@ -40,7 +40,7 @@ public class Inscribed : PlaceholderCharacterModel
         ModelDb.Card<InscribedStrike>(),
         ModelDb.Card<DarkRuneCard>(),
         ModelDb.Card<IceRuneCard>(),
-        ModelDb.Card<LightningRuneCard>(),
+        ModelDb.Card<ThunderRuneCard>(),
         ModelDb.Card<LightRuneCard>(),
         ModelDb.Card<EarthRuneCard>()
     ];

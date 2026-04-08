@@ -57,8 +57,8 @@ public class InscribedStrike() : InscribedCard(1,
                         break;
                     // ice rune
                     case "(0, 1, 1, 1)":
-                        weakAdded++;
-                        // MainFile.Logger.Info("Weak added");
+                        blockAdded += 5;
+                        // MainFile.Logger.Info("Block added");
                         break;
                     // Lightning Rune
                     case "(1, 1, 0, 1)":
@@ -67,8 +67,8 @@ public class InscribedStrike() : InscribedCard(1,
                         break;
                     // Earth rune
                     case "(0.54509807, 0.27058825, 0.07450981, 1)":
-                        blockAdded += 5;
-                        // MainFile.Logger.Info("Block added");
+                        weakAdded++;
+                        // MainFile.Logger.Info("Weak added");
                         break;
                     // Light rune
                     case "(0.827451, 0.827451, 0.827451, 1)":
@@ -99,7 +99,7 @@ public class InscribedStrike() : InscribedCard(1,
         await Cmd.Wait(0.25f);
         
         // attack
-        for (int i = 1; i <= hitCount; ++i)
+        for (int i = 0; i < hitCount; ++i)
         {
             await CommonActions.CardAttack(this, play.Target).Execute(choiceContext);
             await Cmd.Wait(0.25f);
@@ -111,7 +111,7 @@ public class InscribedStrike() : InscribedCard(1,
         await Cmd.Wait(0.25f);
         
         // draw card and energy
-        for (int i = 0; i <= cardAndEnergyAdded; i++)
+        for (int i = 0; i < cardAndEnergyAdded; i++)
         {
             await CardPileCmd.Draw(choiceContext, this.Owner);
             await PlayerCmd.GainEnergy(1, this.Owner);

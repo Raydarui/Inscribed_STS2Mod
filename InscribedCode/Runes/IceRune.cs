@@ -8,22 +8,22 @@ namespace Inscribed.InscribedCode.Runes;
 
 public class IceRune : CustomOrbModel
 {
-    public override decimal PassiveVal => 0;
+    public override decimal PassiveVal => 5;
     public override decimal EvokeVal => 0;
     public override Color DarkenedColor => new Color(Colors.Aqua);
     
     public override Node2D? CreateCustomSprite()
     {
         var container = new Node2D();
-        string lightningPath = SceneHelper.GetScenePath("orbs/orb_visuals/lightning_orb");
-        Node2D lightning = PreloadManager.Cache.GetScene(lightningPath)
+        string frostPath = SceneHelper.GetScenePath("orbs/orb_visuals/frost_orb");
+        Node2D frost = PreloadManager.Cache.GetScene(frostPath)
             .Instantiate<Node2D>(PackedScene.GenEditState.Disabled);
-        new MegaSprite(lightning.GetNode("SpineSkeleton"))
+        new MegaSprite(frost.GetNode("SpineSkeleton"))
             .GetAnimationState().SetAnimation("idle_loop");
         // change the color and size
-        lightning.Modulate = new Color(0.0f, 0.1f, 1.0f, 1.0f);
-        lightning.Scale = new Vector2(1.1f, 1.1f);
-        container.AddChild(lightning);
+        // frost.Modulate = new Color(0.0f, 0.1f, 1.0f, 1.0f);
+        frost.Scale = new Vector2(1.1f, 1.1f);
+        container.AddChild(frost);
         return container;
     }
 }
