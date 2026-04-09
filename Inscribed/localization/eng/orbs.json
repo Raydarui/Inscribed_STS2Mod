@@ -18,6 +18,6 @@
   "INSCRIBED-LIGHT_RUNE.description": "Next [gold]Inscribed[/gold] attack, Draw 1 card and Gain 1 energy.",
   "INSCRIBED-LIGHT_RUNE.smartDescription": "Next [gold]Inscribed[/gold] attack Draw 1 card and Gain 1 energy.",
   "INSCRIBED-DARK_RUNE.title": "Dark Rune",
-  "INSCRIBED-DARK_RUNE.description": "Next [gold]Inscribed[/gold] attack, target everyone.",
-  "INSCRIBED-DARK_RUNE.smartDescription": "Next [gold]Inscribed[/gold] attack, target everyone."
+  "INSCRIBED-DARK_RUNE.description": "Next [gold]Inscribed[/gold] attack, applies Debilitate.",
+  "INSCRIBED-DARK_RUNE.smartDescription": "Next [gold]Inscribed[/gold] attack, applies +2 Debilitate."
 }

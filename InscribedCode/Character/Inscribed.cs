@@ -26,18 +26,16 @@ public class Inscribed : PlaceholderCharacterModel
 
     public override IEnumerable<CardModel> StartingDeck =>
     [
-        /*ModelDb.Card<StrikeInscribed>(),
-        ModelDb.Card<StrikeInscribed>(),
         ModelDb.Card<StrikeInscribed>(),
         ModelDb.Card<StrikeInscribed>(),
         ModelDb.Card<StrikeInscribed>(),
         ModelDb.Card<DefendInscribed>(),
         ModelDb.Card<DefendInscribed>(),
         ModelDb.Card<DefendInscribed>(),
-        ModelDb.Card<DefendInscribed>(),
-        ModelDb.Card<DefendInscribed>(),*/
-        ModelDb.Card<FireRuneCard>(),
         ModelDb.Card<InscribedStrike>(),
+        ModelDb.Card<InscribedStrike>(),
+        ModelDb.Card<InscribedStrike>(),
+        ModelDb.Card<FireRuneCard>(),
         ModelDb.Card<DarkRuneCard>(),
         ModelDb.Card<IceRuneCard>(),
         ModelDb.Card<ThunderRuneCard>(),

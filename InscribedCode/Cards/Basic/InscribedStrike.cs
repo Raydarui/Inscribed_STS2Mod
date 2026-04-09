@@ -38,7 +38,7 @@ public class InscribedStrike() : InscribedCard(1,
         int hitCount = 1;
         int blockAdded = 0;
         int cardAndEnergyAdded = 0;
-        bool TargetEveryone = false;
+        int debilitateAdded = 0;
         
         OrbQueue orbQueue = this.Owner.PlayerCombatState.OrbQueue;
         int orbCount = orbQueue.Orbs.Count();
@@ -81,7 +81,7 @@ public class InscribedStrike() : InscribedCard(1,
                         break;
                     // Dark Rune
                     case "(0.6627451, 0.6627451, 0.6627451, 1)":
-                        TargetEveryone = true;
+                        debilitateAdded += 2;
                         break;
                 }
 
@@ -92,12 +92,17 @@ public class InscribedStrike() : InscribedCard(1,
         // apply block
         await CreatureCmd.GainBlock(this.Owner.Creature, new BlockVar(blockAdded, ValueProp.Move), play);
         await Cmd.Wait(0.2f);
+        
         // apply strenght
         await CommonActions.ApplySelf<StrengthPower>(this, strengthAdded);
         await Cmd.Wait(0.25f);
-        
-        // MULTI TARGET WEAK AND DAMAGE WIP
 
+        // apply debilitate
+        ArgumentNullException.ThrowIfNull(play.Target, "play.Target");
+        await CommonActions.Apply<DebilitatePower>(play.Target, this,  debilitateAdded);
+        await Cmd.Wait(0.25f);
+        
+        
         // Apply weak
         ArgumentNullException.ThrowIfNull(play.Target, "play.Target");
         await CommonActions.Apply<WeakPower>(play.Target, this,  weakAdded);
