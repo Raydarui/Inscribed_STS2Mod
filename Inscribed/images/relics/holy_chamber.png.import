@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://csr2xwd8b4gnh"
-path="res://.godot/imported/big_energy.png-73971f40302f3430351f2e9857d6c673.ctex"
+uid="uid://i6l80eh43v3i"
+path="res://.godot/imported/holy_chamber.png-73f3513e74b52e375764574edca0d09b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Inscribed/images/charui/big_energy.png"
-dest_files=["res://.godot/imported/big_energy.png-73971f40302f3430351f2e9857d6c673.ctex"]
+source_file="res://Inscribed/images/relics/holy_chamber.png"
+dest_files=["res://.godot/imported/holy_chamber.png-73f3513e74b52e375764574edca0d09b.ctex"]
 
 [params]
 

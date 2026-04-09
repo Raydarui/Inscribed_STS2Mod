@@ -66,4 +66,15 @@ public class Inscribed : PlaceholderCharacterModel
     public override string CustomCharacterSelectLockedIconPath => "char_select_char_name_locked.png".CharacterUiPath();
     public override string CustomMapMarkerPath => "map_marker_char_name.png".CharacterUiPath();
     public override string CustomVisualPath => "res://Inscribed/scenes/inscribed.tscn";
+    
+    private static string EnergyCounterPaths(int i)
+    {
+        return "res://Inscribed/images/charui/inscribed_orb_layer_" + i + ".png";
+    }
+    public override CustomEnergyCounter? CustomEnergyCounter => new CustomEnergyCounter(
+        (Func<int, string>)EnergyCounterPaths,
+        new Color("2e2e2e"),
+        new Color("2e2e2e")
+    );
+    
 }

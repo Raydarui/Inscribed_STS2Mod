@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://csr2xwd8b4gnh"
-path="res://.godot/imported/big_energy.png-73971f40302f3430351f2e9857d6c673.ctex"
+uid="uid://crejngqrpg8q5"
+path="res://.godot/imported/inscribed_orb_layer_4.png-333423d299c0cbd4aecc82b427705cfc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Inscribed/images/charui/big_energy.png"
-dest_files=["res://.godot/imported/big_energy.png-73971f40302f3430351f2e9857d6c673.ctex"]
+source_file="res://Inscribed/images/charui/inscribed_orb_layer_4.png"
+dest_files=["res://.godot/imported/inscribed_orb_layer_4.png-333423d299c0cbd4aecc82b427705cfc.ctex"]
 
 [params]
 

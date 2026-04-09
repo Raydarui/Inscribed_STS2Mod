@@ -1,7 +1,9 @@
 ﻿using BaseLib.Utils;
 using Inscribed.InscribedCode.Cards;
+using Inscribed.InscribedCode.Runes;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.ValueProps;
 
@@ -14,6 +16,7 @@ public class DefendInscribed() : InscribedCard(1,
 {
     protected override HashSet<CardTag> CanonicalTags => [CardTag.Defend];
     protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(5, ValueProp.Move)];
+    
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

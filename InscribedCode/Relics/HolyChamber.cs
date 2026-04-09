@@ -3,6 +3,7 @@ using Inscribed.InscribedCode.Character;
 using Inscribed.InscribedCode.Relics;
 using Inscribed.InscribedCode.Runes;
 using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Entities.Actions;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -18,6 +19,11 @@ public class HolyChamber() : InscribedRelic
 
     public override async Task BeforePlayPhaseStart(PlayerChoiceContext choiceContext, Player player)
     {
+        if (player.Creature.CombatState.RoundNumber != 1)
+        {
+            return;
+        }
+        
         Random rnd = new();
         int orbNo = rnd.Next(1, 6);
         

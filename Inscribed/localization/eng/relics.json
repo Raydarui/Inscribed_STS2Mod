@@ -1,5 +1,8 @@
 {
   "INSCRIBED-HOLY_CHAMBER.description": "At the start of a combat, begin with 1 random elemental Rune loaded.",
   "INSCRIBED-HOLY_CHAMBER.flavor": "",
-  "INSCRIBED-HOLY_CHAMBER.title": "Holy Chamber"
+  "INSCRIBED-HOLY_CHAMBER.title": "Holy Chamber",
+  "INSCRIBED-SEEKER_OF_TRUTH.description": "Gain 2 rune slots (up to a maximum of 5)",
+  "INSCRIBED-SEEKER_OF_TRUTH.flavor": "",
+  "INSCRIBED-SEEKER_OF_TRUTH.title": "Seeker of Truth"
 }
