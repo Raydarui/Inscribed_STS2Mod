@@ -9,6 +9,9 @@ using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.Relics;
 using Inscribed.InscribedCode.Cards.Common;
+using Inscribed.InscribedCode.Cards.rare;
+using Inscribed.InscribedCode.Cards.uncommon;
+using Inscribed.InscribedCode.Relics;
 
 
 namespace Inscribed.InscribedCode.Character;
@@ -45,7 +48,7 @@ public class Inscribed : PlaceholderCharacterModel
 
     public override IReadOnlyList<RelicModel> StartingRelics =>
     [
-        ModelDb.Relic<BurningBlood>()
+        ModelDb.Relic<HolyChamber>()
     ];
     
     public override int BaseOrbSlotCount => 3;

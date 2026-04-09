@@ -3,10 +3,10 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
-namespace Inscribed.InscribedCode.Cards.Common;
+namespace Inscribed.InscribedCode.Cards.uncommon;
 
-public class ThunderRuneCard() : InscribedCard(1,
-    CardType.Skill, CardRarity.Common,
+public class LightRuneCard() : InscribedCard(1,
+    CardType.Skill, CardRarity.Uncommon,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
@@ -15,8 +15,8 @@ public class ThunderRuneCard() : InscribedCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        ThunderRuneCard card = this;
-        await OrbCmd.Channel<Runes.ThunderRune>(choiceContext, card.Owner);
+        LightRuneCard card = this;
+        await OrbCmd.Channel<Runes.LightRune>(choiceContext, card.Owner);
     }
 
     protected override void OnUpgrade()

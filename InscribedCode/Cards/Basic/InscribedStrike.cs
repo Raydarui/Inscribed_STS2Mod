@@ -84,41 +84,40 @@ public class InscribedStrike() : InscribedCard(1,
                         debilitateAdded += 2;
                         break;
                 }
-
                     await OrbCmd.EvokeNext(choiceContext, this.Owner, true); 
             }
         }
        
         // apply block
         await CreatureCmd.GainBlock(this.Owner.Creature, new BlockVar(blockAdded, ValueProp.Move), play);
-        await Cmd.Wait(0.2f);
+        // await Cmd.Wait(0.2f);
         
         // apply strenght
         await CommonActions.ApplySelf<StrengthPower>(this, strengthAdded);
-        await Cmd.Wait(0.25f);
+        // await Cmd.Wait(0.25f);
 
         // apply debilitate
         ArgumentNullException.ThrowIfNull(play.Target, "play.Target");
         await CommonActions.Apply<DebilitatePower>(play.Target, this,  debilitateAdded);
-        await Cmd.Wait(0.25f);
+        // await Cmd.Wait(0.25f);
         
         
         // Apply weak
         ArgumentNullException.ThrowIfNull(play.Target, "play.Target");
         await CommonActions.Apply<WeakPower>(play.Target, this,  weakAdded);
-        await Cmd.Wait(0.25f);
+        // await Cmd.Wait(0.25f);
         
         // attack
         for (int i = 0; i < hitCount; ++i)
         {
             await CommonActions.CardAttack(this, play.Target).Execute(choiceContext);
-            await Cmd.Wait(0.25f);
+            // await Cmd.Wait(0.25f);
         }
         
         
         // clear strength
         await CommonActions.ApplySelf<StrengthPower>(this, -strengthAdded);
-        await Cmd.Wait(0.25f);
+        // await Cmd.Wait(0.25f);
         
         // draw card and energy
         for (int i = 0; i < cardAndEnergyAdded; i++)
