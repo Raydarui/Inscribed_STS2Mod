@@ -23,7 +23,11 @@ public class InscribedStrike() : InscribedCard(1,
     public override IEnumerable<CardKeyword> CanonicalKeywords => [InscribedKeywords.Inscription];
     protected override HashSet<CardTag> CanonicalTags => [CardTag.Strike];
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(6, ValueProp.Move)];
-
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips =>
+    [
+        HoverTipFactory.FromKeyword(InscribedKeywords.Inscription)
+    ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
@@ -95,6 +99,7 @@ public class InscribedStrike() : InscribedCard(1,
         // MULTI TARGET WEAK AND DAMAGE WIP
 
         // Apply weak
+        ArgumentNullException.ThrowIfNull(play.Target, "play.Target");
         await CommonActions.Apply<WeakPower>(play.Target, this,  weakAdded);
         await Cmd.Wait(0.25f);
         
