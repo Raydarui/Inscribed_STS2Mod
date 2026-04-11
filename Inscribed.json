@@ -3,7 +3,7 @@
   "name": "Inscribed",
   "author": "Raydarui, Noel",
   "description": "The Inscribed Character mod",
-  "version": "v0.1.2",
+  "version": "v0.1.3",
   "has_pck": true,
   "has_dll": true,
   "dependencies": ["BaseLib"],

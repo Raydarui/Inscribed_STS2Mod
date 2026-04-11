@@ -11,6 +11,7 @@ public class FireRuneCard() : InscribedCard(1,
     CardType.Skill, CardRarity.Common,
     TargetType.Self)
 {
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [InscribedKeywords.Rune];
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>

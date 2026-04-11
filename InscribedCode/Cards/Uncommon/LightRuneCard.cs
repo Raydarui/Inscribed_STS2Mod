@@ -12,7 +12,7 @@ public class LightRuneCard() : InscribedCard(1,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
-    
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [InscribedKeywords.Rune];
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
         HoverTipFactory.FromOrb<LightRune>()

@@ -48,7 +48,7 @@ public class Inscribed : PlaceholderCharacterModel
 
     public override IReadOnlyList<RelicModel> StartingRelics =>
     [
-        ModelDb.Relic<HolyChamber>()
+        ModelDb.Relic<QuiverOfOrder>()
     ];
     
     public override int BaseOrbSlotCount => 3;
@@ -67,14 +67,16 @@ public class Inscribed : PlaceholderCharacterModel
     public override string CustomMapMarkerPath => "map_marker_char_name.png".CharacterUiPath();
     public override string CustomVisualPath => "res://Inscribed/scenes/inscribed.tscn";
     
-    private static string EnergyCounterPaths(int i)
-    {
-        return "res://Inscribed/images/charui/inscribed_orb_layer_" + i + ".png";
-    }
     public override CustomEnergyCounter? CustomEnergyCounter => new CustomEnergyCounter(
-        (Func<int, string>)EnergyCounterPaths,
+        (Func<int, string>)EnergyCounterLayerPath,
         new Color("2e2e2e"),
         new Color("2e2e2e")
     );
+    
+    private static string EnergyCounterLayerPath(int layer)
+    {
+        return ("inscribed_orb_layer_" + layer + ".png").CharacterUiPath();
+    }
+    
     
 }

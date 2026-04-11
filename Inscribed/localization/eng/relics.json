@@ -4,5 +4,11 @@
   "INSCRIBED-HOLY_CHAMBER.title": "Holy Chamber",
   "INSCRIBED-SEEKER_OF_TRUTH.description": "Gain 2 rune slots (up to a maximum of 5)",
   "INSCRIBED-SEEKER_OF_TRUTH.flavor": "",
-  "INSCRIBED-SEEKER_OF_TRUTH.title": "Seeker of Truth"
+  "INSCRIBED-SEEKER_OF_TRUTH.title": "Seeker of Truth",
+  "INSCRIBED-ECHO_OF_THE_GOSPEL.description": "At the end of your turn, Gain 1 random Rune.",
+  "INSCRIBED-ECHO_OF_THE_GOSPEL.flavor": "",
+  "INSCRIBED-ECHO_OF_THE_GOSPEL.title": "Echo of the Gospel",
+  "INSCRIBED-QUIVER_OF_ORDER.description": "Whenever you play 3 \"Rune\" cards in a single turn, \nadd a random Inscription card to your hand. That card costs 0 this turn.",
+  "INSCRIBED-QUIVER_OF_ORDER.flavor": "",
+  "INSCRIBED-QUIVER_OF_ORDER.title": "Quiver of Order"
 }

@@ -1,10 +1,8 @@
 ﻿using BaseLib.Utils;
 using Inscribed.InscribedCode.Character;
 using Inscribed.InscribedCode.Relics;
-using Inscribed.InscribedCode.Runes;
+using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
-using MegaCrit.Sts2.Core.Entities.Actions;
-using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 
@@ -12,14 +10,14 @@ namespace Inscribed.InscribedCode.Relics;
 
 
 [Pool(typeof(InscribedRelicPool))]
-public class HolyChamber() : InscribedRelic
+public class EchoOfTheGospel() : InscribedRelic
 {
     public override RelicRarity Rarity =>
-        RelicRarity.Starter;
+        RelicRarity.Rare;
 
-    public override async Task BeforePlayPhaseStart(PlayerChoiceContext choiceContext, Player player)
+    public override async Task AfterTurnEnd(PlayerChoiceContext choiceContext, CombatSide side)
     {
-        if (player.Creature.CombatState.RoundNumber != 1)
+        if (side == CombatSide.Enemy)
         {
             return;
         }
@@ -50,9 +48,5 @@ public class HolyChamber() : InscribedRelic
             default:
                 return;
         }
-        
-        return;
-        
     }
-
 }

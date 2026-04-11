@@ -5,16 +5,25 @@ using MegaCrit.Sts2.Core.Models;
 namespace Inscribed.InscribedCode;
 
   
+  
 public class InscribedKeywords
 {
     [CustomEnum, KeywordProperties(AutoKeywordPosition.Before)]
     public static CardKeyword Inscription;
+
+    [CustomEnum, KeywordProperties(AutoKeywordPosition.Before)]
+    public static CardKeyword Rune;
     
 
 
     public static bool IsInscription(CardModel card)
     {
         return card.Keywords.Contains(Inscription);
+    }
+    
+    public static bool isRune(CardModel card)
+    {
+        return card.Keywords.Contains(Rune);
     }
 
 

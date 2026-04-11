@@ -22,6 +22,10 @@ settings/gdscript/always_track_call_stacks=true
 
 project/assembly_name="Inscribed"
 
+[editor_plugins]
+
+enabled=PackedStringArray()
+
 [rendering]
 
 renderer/rendering_method="mobile"

@@ -1,4 +1,6 @@
 {
-  "INSCRIBED-INSCRIPTION.description": "If you use this card, consume all active [gold]Runes[/gold] and apply their effects.",
-  "INSCRIBED-INSCRIPTION.title": "Inscription"
+  "INSCRIBED-INSCRIPTION.description": "Whenever you play a card, Consume All Runes.",
+  "INSCRIBED-INSCRIPTION.title": "Inscription",
+  "INSCRIBED-RUNE.description": "Rune card",
+  "INSCRIBED-RUNE.title": "Rune"
 }
