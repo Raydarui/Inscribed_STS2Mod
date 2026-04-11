@@ -18,5 +18,9 @@
   "INSCRIBED-LIGHT_RUNE_CARD.description": "Gain a [gold]Light[/gold] rune.",
   "INSCRIBED-LIGHT_RUNE_CARD.title": "Light Rune",
   "INSCRIBED-INSCRIBED_STRIKE.description": "Deal {Damage:diff()} damage.",
-  "INSCRIBED-INSCRIBED_STRIKE.title": "Inscribed Strike"
+  "INSCRIBED-INSCRIBED_STRIKE.title": "Inscribed Strike",
+  "INSCRIBED-SOLAR_INSCRIPTION.description": "Gain {Block:diff()} Block. Apply [gold]Fire[/gold] rune.",
+  "INSCRIBED-SOLAR_INSCRIPTION.title": "Solar Inscription",
+  "INSCRIBED-RIFT_CHAIN.description": "Deal {Damage:diff()} damage. If you have {Runes:diff()} or more Runes this turn, gain a [gold]Thunder[/gold] Rune.",
+  "INSCRIBED-RIFT_CHAIN.title": "Rift Chain"
 }

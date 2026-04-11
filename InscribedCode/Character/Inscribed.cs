@@ -29,7 +29,7 @@ public class Inscribed : PlaceholderCharacterModel
 
     public override IEnumerable<CardModel> StartingDeck =>
     [
-        ModelDb.Card<StrikeInscribed>(),
+        /*ModelDb.Card<StrikeInscribed>(),
         ModelDb.Card<StrikeInscribed>(),
         ModelDb.Card<StrikeInscribed>(),
         ModelDb.Card<DefendInscribed>(),
@@ -37,18 +37,20 @@ public class Inscribed : PlaceholderCharacterModel
         ModelDb.Card<DefendInscribed>(),
         ModelDb.Card<InscribedStrike>(),
         ModelDb.Card<InscribedStrike>(),
-        ModelDb.Card<InscribedStrike>(),
+        ModelDb.Card<InscribedStrike>(),*/
         ModelDb.Card<FireRuneCard>(),
         ModelDb.Card<DarkRuneCard>(),
         ModelDb.Card<IceRuneCard>(),
         ModelDb.Card<ThunderRuneCard>(),
         ModelDb.Card<LightRuneCard>(),
-        ModelDb.Card<EarthRuneCard>()
+        ModelDb.Card<EarthRuneCard>(),
+        ModelDb.Card<RiftChain>(),
+        ModelDb.Card<SolarInscription>()
     ];
 
     public override IReadOnlyList<RelicModel> StartingRelics =>
     [
-        ModelDb.Relic<QuiverOfOrder>()
+        ModelDb.Relic<HolyChamber>()
     ];
     
     public override int BaseOrbSlotCount => 3;
