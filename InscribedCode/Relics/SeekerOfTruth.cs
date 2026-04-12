@@ -13,12 +13,11 @@ public class SeekerOfTruth() : InscribedRelic
     public override RelicRarity Rarity =>
         RelicRarity.Rare;
 
-    public override Task AfterObtained()
+    public override async Task AfterObtained()
     {
         if(this.Owner.BaseOrbSlotCount <= 3)
         {
-            OrbCmd.AddSlots(this.Owner, 2);
+            OrbCmd.IncreaseBaseOrbCount(this.Owner, 2);
         }
-        return Task.CompletedTask;
     }
 }

@@ -44,13 +44,17 @@ public class Inscribed : PlaceholderCharacterModel
         ModelDb.Card<ThunderRuneCard>(),
         ModelDb.Card<LightRuneCard>(),
         ModelDb.Card<EarthRuneCard>(),*/
+        ModelDb.Card<InscribedStrike>(),
+        ModelDb.Card<InscribedStrike>(),
         ModelDb.Card<RiftChain>(),
         ModelDb.Card<SolarInscription>(),
         ModelDb.Card<EclipseJudgement>(),
         ModelDb.Card<AstralFall>(),
         ModelDb.Card<FrozenBloom>(),
         ModelDb.Card<TrinityMiracle>(),
-        ModelDb.Card<AdamantPrayer>()
+        ModelDb.Card<AdamantPrayer>(),
+        ModelDb.Card<SearchForTruth>(),
+        ModelDb.Card<GospelEcho>()
     ];
 
     public override IReadOnlyList<RelicModel> StartingRelics =>

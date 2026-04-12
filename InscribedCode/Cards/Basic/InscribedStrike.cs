@@ -1,6 +1,7 @@
 ﻿using BaseLib.Utils;
 using Godot;
 using Inscribed.InscribedCode.Cards;
+using Inscribed.InscribedCode.Character;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.DevConsole;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -15,7 +16,7 @@ using MegaCrit.Sts2.GameInfo.Objects;
 
 namespace Inscribed.InscribedCode.Cards.Basic;
 
-  
+
 public class InscribedStrike() : InscribedCard(1,
     CardType.Attack, CardRarity.Basic,
     TargetType.AnyEnemy)

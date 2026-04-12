@@ -1,5 +1,6 @@
 ﻿using BaseLib.Utils;
 using Inscribed.InscribedCode.Cards;
+using Inscribed.InscribedCode.Character;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Orbs;

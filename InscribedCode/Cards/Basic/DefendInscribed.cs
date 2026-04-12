@@ -1,5 +1,6 @@
 ﻿using BaseLib.Utils;
 using Inscribed.InscribedCode.Cards;
+using Inscribed.InscribedCode.Character;
 using Inscribed.InscribedCode.Runes;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -9,7 +10,6 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace Inscribed.InscribedCode.Cards.Basic;
 
-  
 public class DefendInscribed() : InscribedCard(1,
     CardType.Skill, CardRarity.Basic,
     TargetType.Self)

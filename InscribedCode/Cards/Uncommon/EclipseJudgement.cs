@@ -1,5 +1,6 @@
 ﻿using BaseLib.Utils;
 using Inscribed.InscribedCode.Cards;
+using Inscribed.InscribedCode.Character;
 using Inscribed.InscribedCode.Runes;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -9,7 +10,6 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace Inscribed.InscribedCode.Cards.uncommon;
 
-  
 public class EclipseJudgement() : InscribedCard(2,
     CardType.Attack, CardRarity.Uncommon,
     TargetType.AnyEnemy)

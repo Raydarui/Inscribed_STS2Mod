@@ -1,4 +1,6 @@
-﻿using Inscribed.InscribedCode.Cards;
+﻿using BaseLib.Utils;
+using Inscribed.InscribedCode.Cards;
+using Inscribed.InscribedCode.Character;
 using Inscribed.InscribedCode.Runes;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -7,7 +9,7 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace Inscribed.InscribedCode.Cards.Rare;
 
-  
+
 public class TrinityMiracle() : InscribedCard(0,
     CardType.Attack, CardRarity.Rare,
     TargetType.Self)
