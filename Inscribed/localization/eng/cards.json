@@ -21,8 +21,16 @@
   "INSCRIBED-INSCRIBED_STRIKE.title": "Inscribed Strike",
   "INSCRIBED-SOLAR_INSCRIPTION.description": "Gain {Block:diff()} Block. Apply [gold]Fire[/gold] rune.",
   "INSCRIBED-SOLAR_INSCRIPTION.title": "Solar Inscription",
-  "INSCRIBED-RIFT_CHAIN.description": "Deal {Damage:diff()} damage. If you have {Runes:diff()} or more Runes this turn, gain a [gold]Thunder[/gold] Rune.",
+  "INSCRIBED-RIFT_CHAIN.description": "Deal {Damage:diff()} damage. If you have {RunesNeeded:diff()} or more Runes this turn, gain a [gold]Thunder[/gold] Rune.",
   "INSCRIBED-RIFT_CHAIN.title": "Rift Chain",
   "INSCRIBED-ECLIPSE_JUDGEMENT.description": "Deal {Damage:diff()} damage. Apply Dark Rune.",
-  "INSCRIBED-ECLIPSE_JUDGEMENT.title": "Eclipse Judgement"
+  "INSCRIBED-ECLIPSE_JUDGEMENT.title": "Eclipse Judgement",
+  "INSCRIBED-ADAMANT_PRAYER.description": "Apply [gold]Earth[/gold] Rune. Draw 1 card.",
+  "INSCRIBED-ADAMANT_PRAYER.title": "Adamant Prayer",
+  "INSCRIBED-FROZEN_BLOOM.description": "Apply {RuneCount:diff()} [gold]Ice[/gold] Runes.",
+  "INSCRIBED-FROZEN_BLOOM.title": "Frozen Bloom",
+  "INSCRIBED-TRINITY_MIRACLE.description": "Apply [gold]Fire[/gold] Rune, [gold]Light[/gold] Rune, and [gold]Dark[/gold] Rune.",
+  "INSCRIBED-TRINITY_MIRACLE.title": "Trinity Miracle",
+  "INSCRIBED-ASTRAL_FALL.description": "Deal {Damage:diff()} damage. Double the effects of all consumed [gold]Runes[/gold].",
+  "INSCRIBED-ASTRAL_FALL.title": "Astral Fall"
 }

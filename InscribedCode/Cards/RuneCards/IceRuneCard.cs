@@ -5,26 +5,25 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
-namespace Inscribed.InscribedCode.Cards.Common;
+namespace Inscribed.InscribedCode.Cards.Basic;
 
-public class FireRuneCard() : InscribedCard(1,
-    CardType.Skill, CardRarity.Common,
+public class IceRuneCard() : InscribedCard(1,
+    CardType.Skill, CardRarity.Basic,
     TargetType.Self)
 {
-    public override IEnumerable<CardKeyword> CanonicalKeywords => [InscribedKeywords.Rune];
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
-    
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [InscribedKeywords.Rune];
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
-        HoverTipFactory.FromOrb<FireRune>()
+        HoverTipFactory.FromOrb<IceRune>()
     ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        FireRuneCard card = this;
-        await OrbCmd.Channel<Runes.FireRune>(choiceContext, card.Owner);
+        IceRuneCard card = this;
+        await OrbCmd.Channel<Runes.IceRune>(choiceContext, card.Owner);
     }
 
     protected override void OnUpgrade()

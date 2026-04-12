@@ -17,7 +17,7 @@ public class RiftChain() : InscribedCard(1,
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [
         new DamageVar(8, ValueProp.Move),
-        new IntVar("Runes", 2)];
+        new IntVar("RunesNeeded", 2)];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
@@ -26,7 +26,7 @@ public class RiftChain() : InscribedCard(1,
         await CommonActions.CardAttack(this, play.Target).Execute(choiceContext);
         OrbQueue orbQueue = this.Owner.PlayerCombatState.OrbQueue;
         int orbCount = orbQueue.Orbs.Count();
-        if (orbCount >= this.DynamicVars["Runes"].IntValue)
+        if (orbCount >= this.DynamicVars["RunesNeeded"].IntValue)
         {
             await OrbCmd.Channel<ThunderRune>(choiceContext, this.Owner);
         }

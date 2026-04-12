@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.Relics;
 using Inscribed.InscribedCode.Cards.Common;
-using Inscribed.InscribedCode.Cards.rare;
+using Inscribed.InscribedCode.Cards.Rare;
 using Inscribed.InscribedCode.Cards.uncommon;
 using Inscribed.InscribedCode.Relics;
 
@@ -38,15 +38,19 @@ public class Inscribed : PlaceholderCharacterModel
         ModelDb.Card<InscribedStrike>(),
         ModelDb.Card<InscribedStrike>(),
         ModelDb.Card<InscribedStrike>(),*/
-        ModelDb.Card<FireRuneCard>(),
+        /*ModelDb.Card<FireRuneCard>(),
         ModelDb.Card<DarkRuneCard>(),
         ModelDb.Card<IceRuneCard>(),
         ModelDb.Card<ThunderRuneCard>(),
         ModelDb.Card<LightRuneCard>(),
-        ModelDb.Card<EarthRuneCard>(),
+        ModelDb.Card<EarthRuneCard>(),*/
         ModelDb.Card<RiftChain>(),
         ModelDb.Card<SolarInscription>(),
-        ModelDb.Card<EclipseJudgement>()
+        ModelDb.Card<EclipseJudgement>(),
+        ModelDb.Card<AstralFall>(),
+        ModelDb.Card<FrozenBloom>(),
+        ModelDb.Card<TrinityMiracle>(),
+        ModelDb.Card<AdamantPrayer>()
     ];
 
     public override IReadOnlyList<RelicModel> StartingRelics =>
