@@ -21,7 +21,7 @@ public class InscribedKeywords
         return card.Keywords.Contains(Inscription);
     }
     
-    public static bool isRune(CardModel card)
+    public static bool IsRune(CardModel card)
     {
         return card.Keywords.Contains(Rune);
     }

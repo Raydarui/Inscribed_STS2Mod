@@ -23,7 +23,7 @@ public class QuiverOfOrder() : InscribedRelic
 
     public override async Task AfterCardPlayed(PlayerChoiceContext context, CardPlay cardPlay)
     {
-        if (!InscribedKeywords.isRune(cardPlay.Card))
+        if (!InscribedKeywords.IsRune(cardPlay.Card))
         {
             return;
         }
@@ -32,8 +32,19 @@ public class QuiverOfOrder() : InscribedRelic
 
         if (this.DynamicVars["RunesPlayed"].IntValue == 3)
         {
-            MainFile.Logger.Info("Test");
-            var card = this.Owner.Creature.CombatState.CreateCard<InscribedStrike>(this.Owner);
+            Random rnd = new Random();
+            int cardNo = rnd.Next(1, 1);
+            CardModel card;
+            
+            switch (cardNo)
+            {
+                case 1:
+                    card = this.Owner.Creature.CombatState.CreateCard<InscribedStrike>(this.Owner);
+                    break;
+                default:
+                    return;
+            }
+            
             card.SetToFreeThisTurn();
             await CardPileCmd.AddGeneratedCardToCombat(card, PileType.Hand, true);
         }

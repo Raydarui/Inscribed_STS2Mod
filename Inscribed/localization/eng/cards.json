@@ -22,5 +22,7 @@
   "INSCRIBED-SOLAR_INSCRIPTION.description": "Gain {Block:diff()} Block. Apply [gold]Fire[/gold] rune.",
   "INSCRIBED-SOLAR_INSCRIPTION.title": "Solar Inscription",
   "INSCRIBED-RIFT_CHAIN.description": "Deal {Damage:diff()} damage. If you have {Runes:diff()} or more Runes this turn, gain a [gold]Thunder[/gold] Rune.",
-  "INSCRIBED-RIFT_CHAIN.title": "Rift Chain"
+  "INSCRIBED-RIFT_CHAIN.title": "Rift Chain",
+  "INSCRIBED-ECLIPSE_JUDGEMENT.description": "Deal {Damage:diff()} damage. Apply Dark Rune.",
+  "INSCRIBED-ECLIPSE_JUDGEMENT.title": "Eclipse Judgement"
 }

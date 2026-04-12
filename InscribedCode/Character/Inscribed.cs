@@ -45,7 +45,8 @@ public class Inscribed : PlaceholderCharacterModel
         ModelDb.Card<LightRuneCard>(),
         ModelDb.Card<EarthRuneCard>(),
         ModelDb.Card<RiftChain>(),
-        ModelDb.Card<SolarInscription>()
+        ModelDb.Card<SolarInscription>(),
+        ModelDb.Card<EclipseJudgement>()
     ];
 
     public override IReadOnlyList<RelicModel> StartingRelics =>
