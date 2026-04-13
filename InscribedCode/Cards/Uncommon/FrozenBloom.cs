@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 namespace Inscribed.InscribedCode.Cards.uncommon;
 
 public class FrozenBloom() : InscribedCard(1,
-    CardType.Attack, CardRarity.Basic,
+    CardType.Attack, CardRarity.Uncommon,
     TargetType.Self)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new IntVar("RuneCount", 2)];

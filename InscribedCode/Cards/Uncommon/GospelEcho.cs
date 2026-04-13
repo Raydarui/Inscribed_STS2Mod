@@ -23,6 +23,6 @@ public class GospelEcho() : InscribedCard(1,
 
     protected override void OnUpgrade()
     {
-        this.DynamicVars.Energy.UpgradeValueBy(-1);
+        this.EnergyCost.UpgradeBy(-1);
     }
 }

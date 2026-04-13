@@ -12,6 +12,7 @@ using Inscribed.InscribedCode.Cards.Common;
 using Inscribed.InscribedCode.Cards.Rare;
 using Inscribed.InscribedCode.Cards.uncommon;
 using Inscribed.InscribedCode.Relics;
+using SeekerOfTruth = Inscribed.InscribedCode.Cards.Rare.SeekerOfTruth;
 
 
 namespace Inscribed.InscribedCode.Character;
@@ -53,7 +54,7 @@ public class Inscribed : PlaceholderCharacterModel
         ModelDb.Card<FrozenBloom>(),
         ModelDb.Card<TrinityMiracle>(),
         ModelDb.Card<AdamantPrayer>(),
-        ModelDb.Card<SearchForTruth>(),
+        ModelDb.Card<SeekerOfTruth>(),
         ModelDb.Card<GospelEcho>()
     ];
 

@@ -14,11 +14,11 @@ using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
 using MegaCrit.Sts2.GameInfo.Objects;
 
-namespace Inscribed.InscribedCode.Cards.Basic;
+namespace Inscribed.InscribedCode.Cards.Common;
 
 
 public class InscribedStrike() : InscribedCard(1,
-    CardType.Attack, CardRarity.Basic,
+    CardType.Attack, CardRarity.Common,
     TargetType.AnyEnemy)
 {
     public override IEnumerable<CardKeyword> CanonicalKeywords => [InscribedKeywords.Inscription];

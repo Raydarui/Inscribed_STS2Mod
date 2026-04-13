@@ -1,5 +1,6 @@
 ﻿using BaseLib.Utils;
 using Inscribed.InscribedCode.Cards.Basic;
+using Inscribed.InscribedCode.Cards.Common;
 using Inscribed.InscribedCode.Character;
 using Inscribed.InscribedCode.Relics;
 using MegaCrit.Sts2.Core.Combat;

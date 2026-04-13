@@ -34,6 +34,6 @@ public class RiftChain() : InscribedCard(1,
 
     protected override void OnUpgrade()
     {
-        this.DynamicVars["Runes"].UpgradeValueBy(-1);
+        this.DynamicVars["RunesNeeded"].UpgradeValueBy(-1);
     }
 }

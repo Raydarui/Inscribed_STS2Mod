@@ -8,10 +8,10 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace Inscribed.InscribedCode.Cards.Basic;
+namespace Inscribed.InscribedCode.Cards.Common;
 
 public class SolarInscription() : InscribedCard(1,
-    CardType.Skill, CardRarity.Basic,
+    CardType.Skill, CardRarity.Common,
     TargetType.Self)
 {
     protected override HashSet<CardTag> CanonicalTags => [CardTag.Defend];

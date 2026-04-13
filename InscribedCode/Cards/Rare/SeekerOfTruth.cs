@@ -8,7 +8,7 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace Inscribed.InscribedCode.Cards.Rare;
 
-public class SearchForTruth() : InscribedCard(2,
+public class SeekerOfTruth() : InscribedCard(2,
     CardType.Power, CardRarity.Rare,
     TargetType.Self)
 {
@@ -19,11 +19,11 @@ public class SearchForTruth() : InscribedCard(2,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await CommonActions.ApplySelf<SearchForTruthPower>(this, 1);
+        await CommonActions.ApplySelf<SeekerOfTruthPower>(this, 1);
     }
 
     protected override void OnUpgrade()
     {
-        this.DynamicVars.Energy.UpgradeValueBy(-1);
+        this.EnergyCost.UpgradeBy(-1);
     }
 }

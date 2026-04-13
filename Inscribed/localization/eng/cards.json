@@ -33,8 +33,8 @@
   "INSCRIBED-TRINITY_MIRACLE.title": "Trinity Miracle",
   "INSCRIBED-ASTRAL_FALL.description": "Deal {Damage:diff()} damage. Double the effects of all consumed [gold]Runes[/gold].",
   "INSCRIBED-ASTRAL_FALL.title": "Astral Fall",
-  "INSCRIBED-SEARCH_FOR_TRUTH.description": "Apply +2 [gold]Rune[/gold] Slots (Max 5).",
-  "INSCRIBED-SEARCH_FOR_TRUTH.title": "Search For Truth",
+  "INSCRIBED-SEEKER_OF_TRUTH.description": "Apply +2 [gold]Rune[/gold] Slots (Max 5).",
+  "INSCRIBED-SEEKER_OF_TRUTH.title": "Seeker of Truth",
   "INSCRIBED-GOSPEL_ECHO.description": "At the end of your turn, Gain 1 random [gold]Rune[/gold].",
   "INSCRIBED-GOSPEL_ECHO.title": "Gospel Echo"
 }

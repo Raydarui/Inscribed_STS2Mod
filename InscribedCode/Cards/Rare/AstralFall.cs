@@ -13,7 +13,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace Inscribed.InscribedCode.Cards.Rare;
 
 public class AstralFall() : InscribedCard(3,
-    CardType.Attack, CardRarity.Basic,
+    CardType.Attack, CardRarity.Rare,
     TargetType.AnyEnemy)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(15, ValueProp.Move)];
@@ -110,6 +110,6 @@ public class AstralFall() : InscribedCard(3,
     protected override void OnUpgrade()
     {
         this.RemoveKeyword(CardKeyword.Exhaust);
-        this.DynamicVars.Energy.UpgradeValueBy(-1);
+        this.EnergyCost.UpgradeBy(-1);
     }
 }

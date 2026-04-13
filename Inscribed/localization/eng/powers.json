@@ -1,8 +1,8 @@
 {
-  "INSCRIBED-SEARCH_FOR_TRUTH_POWER.description": "",
-  "INSCRIBED-SEARCH_FOR_TRUTH_POWER.smartDescription": "+2 [gold]Rune[/gold] slots",
-  "INSCRIBED-SEARCH_FOR_TRUTH_POWER.title": "Search For Truth",
+  "INSCRIBED-SEEKER_OF_TRUTH_POWER.description": "",
+  "INSCRIBED-SEEKER_OF_TRUTH_POWER.smartDescription": "+2 [gold]Rune[/gold] slots",
+  "INSCRIBED-SEEKER_OF_TRUTH_POWER.title": "Search For Truth",
   "INSCRIBED-GOSPEL_ECHO_POWER.description": "",
-  "INSCRIBED-GOSPEL_ECHO_POWER.smartDescription": "",
+  "INSCRIBED-GOSPEL_ECHO_POWER.smartDescription": "At the end of your turn, Gain 1 random [gold]Rune[/gold].",
   "INSCRIBED-GOSPEL_ECHO_POWER.title": "Gospel Echo"
 }
