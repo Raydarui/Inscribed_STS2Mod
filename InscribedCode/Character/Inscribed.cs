@@ -30,32 +30,20 @@ public class Inscribed : PlaceholderCharacterModel
 
     public override IEnumerable<CardModel> StartingDeck =>
     [
-        /*ModelDb.Card<StrikeInscribed>(),
         ModelDb.Card<StrikeInscribed>(),
         ModelDb.Card<StrikeInscribed>(),
+        ModelDb.Card<StrikeInscribed>(),
         ModelDb.Card<DefendInscribed>(),
         ModelDb.Card<DefendInscribed>(),
         ModelDb.Card<DefendInscribed>(),
+        ModelDb.Card<DefendInscribed>(),
         ModelDb.Card<InscribedStrike>(),
         ModelDb.Card<InscribedStrike>(),
-        ModelDb.Card<InscribedStrike>(),*/
-        /*ModelDb.Card<FireRuneCard>(),
-        ModelDb.Card<DarkRuneCard>(),
-        ModelDb.Card<IceRuneCard>(),
-        ModelDb.Card<ThunderRuneCard>(),
-        ModelDb.Card<LightRuneCard>(),
-        ModelDb.Card<EarthRuneCard>(),*/
-        ModelDb.Card<InscribedStrike>(),
-        ModelDb.Card<InscribedStrike>(),
-        ModelDb.Card<RiftChain>(),
         ModelDb.Card<SolarInscription>(),
-        ModelDb.Card<EclipseJudgement>(),
-        ModelDb.Card<AstralFall>(),
-        ModelDb.Card<FrozenBloom>(),
-        ModelDb.Card<TrinityMiracle>(),
-        ModelDb.Card<AdamantPrayer>(),
+        ModelDb.Card<SolarInscription>(),
         ModelDb.Card<SeekerOfTruth>(),
-        ModelDb.Card<GospelEcho>()
+        ModelDb.Card<SeekerOfTruth>(),
+        ModelDb.Card<TrinityMiracle>()
     ];
 
     public override IReadOnlyList<RelicModel> StartingRelics =>

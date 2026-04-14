@@ -10,9 +10,7 @@ public class InscribedKeywords
 {
     [CustomEnum, KeywordProperties(AutoKeywordPosition.Before)]
     public static CardKeyword Inscription;
-
-    [CustomEnum, KeywordProperties(AutoKeywordPosition.Before)]
-    public static CardKeyword Rune;
+    
     
 
 
@@ -20,11 +18,5 @@ public class InscribedKeywords
     {
         return card.Keywords.Contains(Inscription);
     }
-    
-    public static bool IsRune(CardModel card)
-    {
-        return card.Keywords.Contains(Rune);
-    }
-
 
 }

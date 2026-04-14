@@ -24,7 +24,7 @@ public class QuiverOfOrder() : InscribedRelic
 
     public override async Task AfterCardPlayed(PlayerChoiceContext context, CardPlay cardPlay)
     {
-        if (!InscribedKeywords.IsRune(cardPlay.Card))
+        if (!cardPlay.Card.Tags.Contains(InscribedTags.Rune))
         {
             return;
         }
