@@ -43,7 +43,8 @@ public class Inscribed : PlaceholderCharacterModel
         ModelDb.Card<SolarInscription>(),
         ModelDb.Card<SeekerOfTruth>(),
         ModelDb.Card<SeekerOfTruth>(),
-        ModelDb.Card<GospelEcho>()
+        ModelDb.Card<Solidify>(),
+        ModelDb.Card<ManaSurge>()
     ];
 
     public override IReadOnlyList<RelicModel> StartingRelics =>

@@ -15,7 +15,7 @@ public class SeekerOfTruthPower() : InscribedPower
 {
     public override PowerType Type => PowerType.Buff;
     public override PowerStackType StackType => PowerStackType.Single;
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new IntVar("SlotsApplied", 0)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [];
 
     public override async Task AfterApplied(Creature? applier, CardModel? cardSource)
     {
@@ -25,16 +25,7 @@ public class SeekerOfTruthPower() : InscribedPower
             if(this.Owner.Player.BaseOrbSlotCount <= 3)
             {
                 await OrbCmd.AddSlots(this.Owner.Player, 2);
-                this.DynamicVars["SlotsApplied"].UpgradeValueBy(1);
             }
-        }
-    }
-
-    public override async Task AfterCombatEnd(CombatRoom room)
-    {
-        if (this.DynamicVars["SlotsApplied"].IntValue == 1 && this.Owner.IsPlayer)
-        {
-            OrbCmd.RemoveSlots(this.Owner.Player, 2);
         }
     }
 }

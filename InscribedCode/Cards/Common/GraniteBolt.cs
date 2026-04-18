@@ -1,6 +1,5 @@
 ﻿using BaseLib.Utils;
 using Inscribed.InscribedCode.Cards;
-using Inscribed.InscribedCode.Character;
 using Inscribed.InscribedCode.Runes;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -11,27 +10,28 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace Inscribed.InscribedCode.Cards.Common;
 
-public class SolarInscription() : InscribedCard(1,
-    CardType.Skill, CardRarity.Common,
-    TargetType.Self)
+  
+public class GraniteBolt() : InscribedCard(1,
+    CardType.Attack, CardRarity.Common,
+    TargetType.AnyEnemy)
 {
-    protected override HashSet<CardTag> CanonicalTags => [CardTag.Defend, InscribedTags.Rune];
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(5, ValueProp.Move)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(6, ValueProp.Move)];
+    protected override HashSet<CardTag> CanonicalTags => [InscribedTags.Rune];
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
     [
-        HoverTipFactory.FromOrb<FireRune>()
+        HoverTipFactory.FromOrb<ThunderRune>()
     ];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await CommonActions.CardBlock(this, play);
-        await OrbCmd.Channel<FireRune>(choiceContext, this.Owner);
+        await CommonActions.CardAttack(this, play).Execute(choiceContext);
+        await OrbCmd.Channel<ThunderRune>(choiceContext, this.Owner);
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars["Block"].UpgradeValueBy(4m);
+        this.DynamicVars.Damage.UpgradeValueBy(3);
     }
 }
